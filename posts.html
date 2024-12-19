@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom - Microblog</title>
+
+    <!-- 98.css Library -->
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/posts.css">
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/taskbar.js" defer></script>
+    <script>
+        if (!isLoggedIn()) window.location.replace("index.html");
+    </script>
+</head>
+
+<body class="bliss-bg">
+
+    <!-- Taskbar -->
+    <div id="taskbar-container"></div>
+
+    <!-- Chatroom Window -->
+    <main class="window chatroom-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Welcome to the Chatroom</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body" style="height: 500px; overflow-y: auto;">
+            <!-- Sort Posts -->
+            <div style="margin-bottom: 10px;">
+                <label for="sortOptions">Sort By:</label>
+                <select id="sortOptions" class="dropdown">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="likes">Most Liked</option>
+                </select>
+            </div>
+
+            <!-- Posts Container -->
+            <ul id="postsList" class="posts-container"></ul>
+        </div>
+
+        <!-- New Post Section -->
+        <div class="window-body">
+            <form id="newPostForm" style="margin: 0;">
+                <label for="postContent">Type your message:</label>
+                <textarea id="postContent" rows="3" class="field" placeholder="Say something..." required></textarea>
+                <div style="margin-top: 5px;">
+                    <button type="submit" class="button">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./scripts/posts.js"></script>
+</body>
+
+</html>

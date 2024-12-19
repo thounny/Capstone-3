@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Microblog</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/landing.css">
+    <script src="./scripts/auth.js" defer></script>
+    <script src="./scripts/register.js" defer></script>
+</head>
+
+<body>
+    <!-- Taskbar -->
+    <nav class="taskbar">
+        <div class="start-button">Start</div>
+        <div class="taskbar-items" id="taskbar-items">
+            <!-- Taskbar links will be dynamically rendered here -->
+        </div>
+    </nav>
+
+    <header>
+        <h1>Create an Account</h1>
+    </header>
+    <main>
+        <form id="registerForm">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="3" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* Global Background and Font */
+body {
+  background: linear-gradient(to bottom, #1c86ee, #87cefa);
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to bottom, #d9d9d9, #f6f6f6);
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #f6f6f6, #d9d9d9);
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Ensure the taskbar starts at the leftmost edge */
+  width: 100%; /* Taskbar stretches across the entire screen width */
+  background: linear-gradient(to top, #1c86ee, #87cefa);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: white;
+  font-size: 12px;
+  margin: 0; /* Remove any unintended margins */
+  padding: 0; /* Remove unintended padding */
+  box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+}
+
+/* Start Button */
+.start-button {
+  background: linear-gradient(to top, #006400, #00b200);
+  padding: 5px 15px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Taskbar Items */
+.taskbar-items {
+  display: flex;
+  gap: 10px;
+}
+
+.taskbar-item a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.taskbar-item a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* Start Menu Modal */
+.start-menu-modal {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  width: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  border-radius: 5px;
+}
+
+.start-menu-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.start-menu-content li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.start-menu-content li:last-child {
+  border-bottom: none;
+}
+
+.start-menu-content a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.start-menu-content a:hover {
+  background-color: #0078d7;
+  color: #fff;
+  border-radius: 5px;
+}

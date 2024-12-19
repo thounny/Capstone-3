@@ -1,0 +1,102 @@
+body {
+  overflow-y: hidden;
+}
+
+/* Bliss Background */
+.bliss-bg {
+  background: url("../styles/bliss.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  font-family: "Tahoma", sans-serif;
+}
+
+/* Chatroom Window */
+.chatroom-window {
+  width: 700px;
+  margin: 50px auto;
+  box-shadow: 4px 4px 0px #808080;
+  background: white;
+}
+
+/* Posts Container */
+.posts-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px #808080;
+  position: relative;
+}
+
+.post-content {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-meta {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.post-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart-btn {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  color: #555;
+}
+
+.heart-btn.liked {
+  color: red;
+}
+
+.like-count {
+  font-size: 12px;
+  color: #333;
+  margin-left: auto;
+}
+
+.delete-btn {
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* New Post Form */
+textarea.field {
+  width: 100%;
+  box-shadow: inset 2px 2px 0px #808080;
+  padding: 5px;
+  font-family: inherit;
+  resize: none;
+  border: 1px solid #c0c0c0;
+}
+
+button.button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #808080;
+  border: 1px solid #000;
+  background: linear-gradient(to bottom, #ddd, #f9f9f9);
+}

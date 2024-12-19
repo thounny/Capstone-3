@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Microblog</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <script src="./scripts/auth.js"></script>
+    <script>
+        if (!isLoggedIn()) window.location.replace("index.html");
+    </script>
+    <script src="./scripts/profile.js"></script>
+    <script src="./scripts/taskbar.js" defer></script>
+</head>
+
+<body class="window-body">
+
+    <!-- Taskbar -->
+    <div id="taskbar-container"></div>
+
+    <!-- Profile Settings Window -->
+    <div class="window profile-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Profile Settings</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body">
+            <form id="profileForm">
+                <!-- Username -->
+                <div class="field-row">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="field" readonly>
+                </div>
+
+                <!-- New Password -->
+                <div class="field-row">
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" class="field" placeholder="Enter new password">
+                </div>
+
+                <!-- Upload Profile Picture -->
+                <div class="field-row">
+                    <label for="profilePic">Profile Picture:</label>
+                    <input type="file" id="profilePic" accept="image/*" class="field">
+                </div>
+
+                <!-- Profile Picture Preview -->
+                <div class="field-row">
+                    <label>Preview:</label>
+                    <img id="profilePicPreview" src="./default-profile.png" alt="Profile Preview" width="100"
+                        height="100" class="window-profile-pic" />
+                </div>
+
+                <!-- Update Button -->
+                <div class="field-row" style="margin-top: 10px;">
+                    <button type="submit">Update Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
