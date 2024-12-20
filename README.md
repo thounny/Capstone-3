@@ -11,9 +11,13 @@
 - View, post, and sort messages in a Windows XP-style chatroom.
 - Like/unlike messages and delete your own posts.
 
+![Screenshot 1](./screenshots/capstone_3_1.gif)
+
 ### **User Authentication**:
 
 - Secure login and registration with JWT authentication.
+
+![Screenshot 1](./screenshots/capstone_3_4.gif)
 
 ### **Customizable User Desktops**:
 
@@ -21,12 +25,16 @@
 - Wallpapers persist across sessions for each user.
 - Drag-and-drop functionality for program windows.
 
+![Screenshot 1](./screenshots/capstone_3_2.gif)
+
 ### **Webamp Music Player Integration**:
 
 - Personalized Webamp playlists for each user.
 - Add and remove songs dynamically with persistent playlists stored via IndexedDB.
 - User-specific songs and playlists remain available on login.
 - Real-time updates between the Add Songs window and Webamp.
+
+![Screenshot 1](./screenshots/capstone_3_3.gif)
 
 ---
 
