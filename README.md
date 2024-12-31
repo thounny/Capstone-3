@@ -17,7 +17,7 @@
 
 - Secure login and registration with JWT authentication.
 
-![Screenshot 1](./screenshots/capstone_3_4.gif)
+![Screenshot 2](./screenshots/capstone_3_4.gif)
 
 ### **Customizable User Desktops**:
 
@@ -25,7 +25,7 @@
 - Wallpapers persist across sessions for each user.
 - Drag-and-drop functionality for program windows.
 
-![Screenshot 1](./screenshots/capstone_3_2.gif)
+![Screenshot 3](./screenshots/capstone_3_2.gif)
 
 ### **Webamp Music Player Integration**:
 
@@ -34,7 +34,7 @@
 - User-specific songs and playlists remain available on login.
 - Real-time updates between the Add Songs window and Webamp.
 
-![Screenshot 1](./screenshots/capstone_3_3.gif)
+![Screenshot 4](./screenshots/capstone_3_3.gif)
 
 ---
 
